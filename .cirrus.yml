@@ -1,0 +1,9 @@
+task:
+  env:
+    CIRRUS_AGENT_VERSION: 1.14.3
+  node_modules_cache:
+    folder: "**/node_modules"
+    fingerprint_script: cat yarn.lock
+    populate_script: yarn install
+  find_script: find . -type d -name node_modules
+  
