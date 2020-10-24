@@ -1,4 +1,6 @@
 task:
+  container:
+    image: node:latest
   env:
     CIRRUS_AGENT_VERSION: 1.14.3
   node_modules_cache:
